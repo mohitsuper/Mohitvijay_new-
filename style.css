@@ -1,0 +1,554 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: .5s;
+  font-family:  'Poppins', sans-serif;
+}
+
+
+:root{
+  --black:#000; 
+  --green:#69AB7B;
+  --d-green : #4B895C;
+  --g-hover: #3F6C4B;
+  --body-font: 'Poppins', sans-serif;
+ --text-transform: capitalize;
+}
+
+html{
+  font-size: 62.5%;
+  
+  font-style:'Poppins', sans-serif;
+}
+body{
+  background: #fff;
+  font-style:'Poppins', sans-serif;
+  width: 100%;
+}
+
+section{
+  max-width: 120rem;
+    padding-right :3rem;
+    padding-left :3rem;
+
+}
+
+header{
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+}
+
+.main header{
+  background: #fff;
+  border-bottom: .4rem solid #eee;
+  display:flex;
+  width: 100%;
+  height:7rem;
+  justify-content: space-between;
+  padding-left:4rem;
+  padding-right: 4rem;
+  align-items: center;
+}
+
+.logo{
+  color :var(--d-green);
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+nav{
+  display :flex;
+  gap:3rem;
+  margin-right: .5rem;
+}
+
+nav a{
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: var(--text-transform);
+}
+
+
+nav a::after{
+content: '';
+  width: 0%;
+  height: .3rem;
+  position: absolute;
+  background:var(--green);
+  left:0;
+  color:white;
+  bottom: -.6rem;
+  transition: 0.5s;
+}
+
+nav a:hover::after{
+    width: 100%;
+    font-weight: 500;
+}
+nav a.active::after {
+  width: 50%;
+  font-weight: 500;
+}
+
+/*------*/
+
+
+
+
+
+.menu{
+ color: #000;
+ font-size: 4rem;
+ display: none;
+}
+ion-icon{
+  display:none;
+}
+
+
+/*======home css ========*/
+.home{
+  display:flex;
+  margin :5rem 0 2rem 0;
+
+}
+.main-home{
+  width: 100%;
+  display:flex;
+  gap:1.5rem;
+
+}
+
+.main-home .text{
+    flex: 1 1 40rem;
+    justify-content: center;
+    align-items: left;
+    display:flex;
+    flex-direction: column;
+}
+.main-home .text .home__title{
+  gap :3rem;
+  line-height: 7.5rem;
+  font-size :6rem;
+  width: 100%;
+}
+.main-home .text .home__title span{
+  color:#69AB7B;
+}
+
+.main-home .text .button{
+  margin-top: 3rem;
+}
+
+.button{
+  display: flex;
+  padding: 2rem;
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-decoration:none;
+  border-radius: .3rem;
+  font-size:1.8rem;
+  color: #eee;
+  background: var(--d-green);
+}
+
+.button:hover{
+  background: #3F6C4B;
+}
+
+
+.main-home .home-img{
+flex: 1 1 40rem;
+overflow: hidden ;
+border-radius: 25%;
+  display: flex;
+  justify-content:  right ;
+  align-items: center;
+
+}
+
+.main-home .home-img img{
+  height: 100%;
+
+}
+
+/*========about css========*/
+
+
+
+.about{
+  display:flex;
+ padding-top: 4rem;
+padding-bottom: 5rem;
+}
+.about .row{
+  height: 100%;
+  display :flex;
+  gap:1.5rem;
+  flex-wrap: wrap;
+  
+}
+.about .row .img{
+  flex:1 1 40rem;
+}
+.about .row .img img{
+  width: 100%;
+  height: 100%;
+}
+.about  .row .cap{
+  flex:1 1 40rem;
+  text-align: left;
+}
+.about  .row  .cap h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.about .row .cap p{
+  line-height: 2;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/*===========work css =========*/
+
+.work{
+  display:flex;
+  width: 100%;
+  flex-direction:column;
+  align-content: center;
+  justify-content: center;
+}
+
+.work h1{
+  width: 100%;
+  text-align: center;
+  font-size:4rem;
+}
+.main-work{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width: 100%;
+gap:1rem;
+}
+.main-work .img{
+  width: 100%;
+  position: relative;
+box-shadow: 0rem 0rem 1rem .1rem #888;
+  display: flex;
+}
+.main-work .img img{
+  width: 100%;
+  filter: brightness(0.8);
+
+  height: 100%;
+}
+
+.main-work .img a{
+  position: absolute;
+ top:7.5rem;left:8.5rem;
+  font-size:2rem;
+  color:var(--green);
+  text-decoration: none;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;}
+  
+  
+  
+  /* mywork page css */
+#mywork{
+  padding:2rem 2.5rem  2rem 2.5rem;
+  margin:auto;
+}
+
+
+.heading{
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  font-size:4rem;
+  font-weight: 600;
+  color:var(--light-white);
+}
+#service{
+  display: grid;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  grid-gap: 2rem;
+  /* grid-template-columns: repeat(auto-fit ,minmax(40rem, 1fr)); */
+  grid-template-columns: repeat(3,1fr);
+  
+}
+
+
+.service-list {
+  align-items: center;
+  justify-content: center;
+  background:var(--white);
+  padding:3rem;
+  box-shadow: 0rem 0rem 1rem .1rem #dddeee;
+  border-radius: 1rem;
+  transition:background 0.5s,transform 0.5s;
+    overflow: hidden;
+      font-size: 1rem;
+      text-align: center;
+      flex-direction: column;
+display: flex;
+    
+}
+.service-list h2{
+  text-align: center;
+  font-size:3rem;
+  font-weight: 700;
+  color: var(--brown);
+}
+.service-list  p{
+  text-align: center;
+  color:var(--light-bg);
+  font-weight: 600;
+    font-size:1.8rem;
+
+  
+}
+.service-list ion-icon{
+  font-size:4rem;
+ position: relative;
+ top:1.5rem;
+ margin-bottom: 2rem;
+ left:0%;
+  color:var(--light-bg);
+}
+.service-list h1{
+  font-size: 50rem;
+  color:#fff;
+}
+.service-list  a  ion-icon{
+  color:var(--brown);
+  text-align: left;
+  font-size: 3rem;
+  
+}
+.service-list:hover{
+  transform: scale(1.05);
+  box-shadow: 0rem 0rem 1rem .2rem #ddd;
+}
+/* mywork page css end */
+
+
+/*------project sections page css-----*/
+.projects{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin:auto;
+  padding:0rem 2.5rem  0rem 2.5rem;
+}
+
+.projects span{
+  font-size: 1.5rem;
+  width: 100%;
+  color: #333;
+}
+.project-main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2rem;
+}
+.project-main .project-box{
+  width:100%;
+  background: #fff;
+  display: flex;
+    box-shadow: 0rem 0rem 1rem .1rem #ccc;
+gap: 3rem;
+padding: 1rem;
+transition: 0.5s;
+  flex-direction: column;
+}
+
+.project-main .project-box:hover{
+transform: scale(1.02);
+}
+  .project-main .project-box .img{
+    display:flex;
+  }
+
+.project-main .project-box .img img{
+  width:100%;
+  height: 100%;
+}
+.project-main .project-box .text-box{
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.project-main .project-box .text-box span{
+  color: var(--light-bg);
+  font-weight: 600;
+}
+
+
+.project-main .project-box .text-box p{
+  color:#777;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+/*--project sections page css end-----*/
+
+
+
+
+
+
+
+
+/*=======Contact page csss =======*/
+
+.contact{
+  display:flex;
+  flex-direction: column;
+  padding: 0rem 8rem 0rem 8rem;
+}
+
+.contact h2{
+  text-align: center;
+  font-size: 4rem;
+}
+.contact__input {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1.5px solid var(--black);
+  outline: none;
+  margin-bottom:1rem;
+}
+
+.contact__button{
+  display: block;
+  border: none;
+  outline: 0;
+  font-size:1.8rem;
+  cursor: pointer;
+}
+
+/* ===== FOOTER =====*/
+.footer {
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+
+.footer__social {
+  margin-bottom: var(--mb-4);
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+}
+
+@media only screen and (max-width:540px){
+
+
+  html{
+    font-size:40%;
+  }
+  
+  .main-home{
+    flex-direction: column-reverse;
+    
+  }
+  
+  .main-home .home-img{
+    justify-content: right;
+    border-radius: 0rem;
+  }
+  
+
+    
+
+ nav{
+    z-index: 1;
+    background: white;
+    height: 100vh;
+    
+    width: 100%;
+    position: absolute;
+    top:0;
+    right: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  
+  nav a{
+    display: inline-block;
+    font-size:2rem;
+    padding-top:2rem;
+  }
+  .menu{
+    display: block;
+  }
+  
+  nav ion-icon{
+    color: #000;
+    font-size: 3rem;
+    position: absolute;
+    top:2rem;
+    left:2rem;
+    display: block;
+  }
+    
+  .main-about{
+    flex-direction: column ;
+    
+  }
+  
+  .main-work{
+    grid-template-columns:1fr;
+
+  }
+  
+  
+  
+  #service{
+  grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+
+
+
+
