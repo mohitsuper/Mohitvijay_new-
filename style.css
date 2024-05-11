@@ -13,6 +13,7 @@
 
 :root{
   --black:#000; 
+  --light-bg:#333;
   --green:#69AB7B;
   --d-green : #4B895C;
   --g-hover: #3F6C4B;
@@ -44,6 +45,8 @@ header{
   top:0;
   left:0;
 }
+
+
 
 .main header{
   background: #fff;
@@ -246,7 +249,6 @@ gap:1rem;
 .main-work .img{
   width: 100%;
   position: relative;
-box-shadow: 0rem 0rem 1rem .1rem #888;
   display: flex;
 }
 .main-work .img img{
@@ -279,8 +281,19 @@ box-shadow: 0rem 0rem 1rem .1rem #888;
 .heading{
   margin: 2.5rem 0rem 2.5rem 0rem;
   font-size:4rem;
-  font-weight: 600;
-  color:var(--light-white);
+  font-weight: 700;
+  color:var(--black);
+}
+
+
+
+
+.sub-heading{
+    font-size:2.5rem;
+    font-weight: 700;
+    color:var(--black);
+    margin: 1rem 0rem 1rem 0rem;
+
 }
 #service{
   display: grid;
@@ -311,7 +324,7 @@ display: flex;
   text-align: center;
   font-size:3rem;
   font-weight: 700;
-  color: var(--brown);
+  color: var(--black);
 }
 .service-list  p{
   text-align: center;
@@ -322,19 +335,22 @@ display: flex;
   
 }
 .service-list ion-icon{
+  display: block;
   font-size:4rem;
  position: relative;
  top:1.5rem;
  margin-bottom: 2rem;
  left:0%;
-  color:var(--light-bg);
+  color:var(--black);
 }
 .service-list h1{
   font-size: 50rem;
   color:#fff;
 }
 .service-list  a  ion-icon{
-  color:var(--brown);
+    display: block;
+
+  color:var(--black);
   text-align: left;
   font-size: 3rem;
   
@@ -355,11 +371,7 @@ display: flex;
   padding:0rem 2.5rem  0rem 2.5rem;
 }
 
-.projects span{
-  font-size: 1.5rem;
-  width: 100%;
-  color: #333;
-}
+
 .project-main{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -381,6 +393,9 @@ transform: scale(1.02);
 }
   .project-main .project-box .img{
     display:flex;
+    flex-basis: 40%;
+
+    
   }
 
 .project-main .project-box .img img{
@@ -450,31 +465,17 @@ transform: scale(1.02);
 }
 
 /* ===== FOOTER =====*/
-.footer {
-  background-color: var(--second-color);
-  color: #fff;
+footer {
+  margin-top:5rem;
+  border-top: .3rem solid #eee;
+  color: var(--black);
   text-align: center;
-  font-weight: var(--font-semi);
+  font-size:1.5rem;
   padding: 2rem 0;
 }
 
-.footer__title {
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
-}
-
-.footer__social {
-  margin-bottom: var(--mb-4);
-}
-
-.footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0 var(--mb-2);
-}
-
-.footer__copy {
-  font-size: var(--smaller-font-size);
+footer h4 span{
+  color: var(--d-green);
 }
 
 @media only screen and (max-width:540px){
@@ -512,6 +513,8 @@ transform: scale(1.02);
 
   }
   
+
+  
   nav a{
     display: inline-block;
     font-size:2rem;
@@ -535,16 +538,18 @@ transform: scale(1.02);
     
   }
   
-  .main-work{
-    grid-template-columns:1fr;
 
-  }
-  
   
   
   #service{
   grid-template-columns: repeat(2,1fr);
 }
+
+
+  .project-main{
+    grid-template-columns: repeat(2,1fr);
+
+  }
 
 }
 
