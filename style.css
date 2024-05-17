@@ -14,7 +14,9 @@
 :root{
   --black:#000; 
   --light-bg:#333;
-  --green:#69AB7B;
+   --green:#1daa61;
+
+/*  --green:#69AB7B;*/
   --d-green : #4B895C;
   --g-hover: #3F6C4B;
   --body-font: 'Poppins', sans-serif;
@@ -81,6 +83,10 @@ nav a{
   position: relative;
   text-transform: var(--text-transform);
 }
+nav a:hover{
+  position:relative;
+}
+
 
 
 nav a::after{
@@ -128,7 +134,9 @@ ion-icon{
 }
 .main-home{
   width: 100%;
-  display:flex;
+  display:grid;
+    grid-template-columns: 0.18fr 1fr 1fr;
+flex-wrap: wrap;
   gap:1.5rem;
 
 }
@@ -143,11 +151,40 @@ ion-icon{
 .main-home .text .home__title{
   gap :3rem;
   line-height: 7.5rem;
-  font-size :6rem;
+  font-size :5rem;
   width: 100%;
 }
 .main-home .text .home__title span{
-  color:#69AB7B;
+  
+    background: linear-gradient(to right, #333 , var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+/*  color: var(--green);*/
+}
+
+.home .main-home .links  a ion-icon {
+   display: block;
+   color: #333;
+   display: flex;
+   font-size: 4rem;
+   gap:1rem;
+ }
+
+.home .main-home .links  a {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home .main-home .links{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:5rem;
+  justify-content: center;
+ align-items: center;
+  
 }
 
 .main-home .text .button{
@@ -299,6 +336,7 @@ gap:1rem;
   display: grid;
   margin: 2.5rem 0rem 2.5rem 0rem;
   grid-gap: 2rem;
+  
   /* grid-template-columns: repeat(auto-fit ,minmax(40rem, 1fr)); */
   grid-template-columns: repeat(3,1fr);
   
@@ -318,6 +356,7 @@ gap:1rem;
       text-align: center;
       flex-direction: column;
 display: flex;
+color: #333;
     
 }
 .service-list h2{
@@ -346,12 +385,10 @@ display: flex;
 }
 
 
-.service-list ion-icon:hover{
-}
 
 .service-list h1{
   font-size: 50rem;
-  color:#fff;
+  color:#333;
 }
 .service-list  a  ion-icon{
     display: block;
@@ -364,8 +401,8 @@ display: flex;
 .service-list:hover{
   transform: scale(1.05);
   box-shadow:  0rem 0rem 1rem .2rem #ddd;
-  color:var(--white);
-    box-shadow: inset 0rem 0rem 0rem 50rem #81C593;
+  color:#fff;
+    box-shadow: inset 0rem 0rem 0rem 50rem #eee;
 
 }
 /* mywork page css end */
@@ -402,20 +439,20 @@ transform: scale(1.02);
 }
   .project-main .project-box .img{
     display:flex;
-    flex-basis: 40%;
+    flex: 1 1 10rem;
 
     
   }
 
 .project-main .project-box .img img{
   width:100%;
-  height: 100%;
 }
 .project-main .project-box .text-box{
   align-items: center;
   text-align: center;
   gap: 1rem;
   display: flex;
+  padding-bottom: 1rem;
   flex-direction: column;
 }
 
@@ -464,11 +501,11 @@ transform: scale(1.02);
   display: block;
   gap:1rem;
   color: var(--black);
-  font-size:2.5rem;
+  font-size:3rem;
   
 }
 .contact .c-text .c-row h3{
-  font-size:2rem;
+  font-size:2.5rem;
   font-weight: 600;
 }
 
@@ -498,6 +535,7 @@ footer h4 span{
   }
   
   .main-home{
+    display: flex;
     flex-direction: column-reverse;
     
   }
@@ -507,7 +545,9 @@ footer h4 span{
     border-radius: 0rem;
   }
   
-
+ .main-home .links .c-co a ion-icon{
+   display: block;
+ }
     
 
  nav{
@@ -525,8 +565,26 @@ footer h4 span{
 
   }
   
-nav a::after{
-  display:none;
+  nav a.active::after {
+    width:0%;
+    text-align: center;
+  }
+  
+nav a:hover{
+  font-weight: 600;
+}
+
+
+nav a::after {
+    background: transparent;
+
+  content: '';
+  width: 0%;
+  height: .3rem;
+  left: 0;
+  color: white;
+  bottom: -.6rem;
+  transition: 0.5s;
 }
   
   nav a{
@@ -563,6 +621,12 @@ nav a::after{
   .project-main{
     grid-template-columns: repeat(2,1fr);
 
+  }
+  
+  .main-home .links{
+    position: absolute;
+    top:20rem;
+    left:3rem;
   }
 
 }
