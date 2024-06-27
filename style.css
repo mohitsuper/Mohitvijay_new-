@@ -566,8 +566,7 @@ footer h4 span{
     z-index: 1;
     background: white;
     height: 100vh;
-    
-    width: 100%;
+    width: 0%;
     position: absolute;
     top:0;
     right: 100%;
@@ -641,6 +640,7 @@ nav a::after {
     left:3rem;
   }
 
+  
 }
 
 
