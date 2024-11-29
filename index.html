@@ -16,17 +16,19 @@
     <meta name="description" content="Iam Mohit Vijay from India Work For Web Page And side Devloapment and create using a Javascript , React, Html ,css Beutifule layout desine">
   <meta name="keywords" content="Mohit,Mohit Vijay,Mohit Vijay Dausa">
       <link rel="icon" href="img/3.jpg">
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+      
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <section class="main cantainer-fluid bg-[#fff] border-b-2 inner-center  w-[100%] mx-auto fixed z-10" id="main bordet-bottom-1 border-[#eee]">
-    <header class="cantainer flex justify-between	  p-3 mx-auto ">
+  <section class="main  bg-[#fff] border-b-2 inner-center  w-[100%] mx-auto fixed z-10" id="main bordet-bottom-1 border-[#eee]">
+    <header class=" xl:px-[12rem] px-[2rem] flex justify-between	  p-3 mx-auto ">
       <div class="logo">
         <h1 class="text-2xl font-[800] text-[#3F6C4B]">mohit.</h1>
       </div>
-      <nav id="sidemenu"  class="nav flex pt-4 gap-5 text-[1.2rem]">
+      <nav id="sidemenu"  class="nav flex pt-4 gap-5 text-[1.2rem] overflow-hidden">
         <ion-icon name="chevron-forward-outline" class="close  sm:hidden" ></ion-icon>
         <a href="#home" class="a text-green-500">home</a>
         <a href="#about" class="a">about</a>
@@ -41,35 +43,38 @@
   </section>
   
   
-  <section class="home cantainer-fluid home mb-5 mx-auto" id="home">
-    <div class="main-home cantainer grid grid-cols-[0.19fr_1fr_1fr] gap-2 mx-auto">
-     <div class="links gap-5 grid text-4xl">
-         <a href="https://www.linkedin.com/in/mohit-vijay-2ab470243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon name="logo-linkedin"></ion-icon></a>
-           <a href="https://github.com/mohitsuper"><ion-icon name="logo-github"></ion-icon></a>
+  <section class="home  mb-5 mx-auto xl:h-screen h-full " id="home">
+
+    <div class="main-home xl:px-[12rem] px-[2rem] h-full grid grid-cols-[0.10fr_1fr_1fr] gap-2 pt-[4rem]">
+     <div class="link flex gap-[3rem]  flex-col  justify-center   h-full w-full ">
+         <a href="https://www.linkedin.com/in/mohit-vijay-2ab470243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class=" text-[2rem] "><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://github.com/mohitsuper" class="text-[2rem]"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.instagram.com/mohitvijay2004" class="text-[2rem]"><ion-icon name="logo-instagram"></ion-icon></a>
+
 
       </div>
       
 
-      <div class="item-2 col-span-full sm:col-span-1 text-4xl lh-3 font-[600] gap-4">
-         <h1 class="home__title leading-[3.5rem]">Hi,<br>I'am <span class="home__title-color">Mohit</span><br> Web Designer</h1>
-         <a href="img/mohit.pdf" download="mohit.pdf" class=" btn bg-green-700 w-[30%] p-3 rounded text-[#eee] text-[1.4rem]">Resume</a>
+      <div class="item-2 w-full  h-full flex flex-col justify-center items-left xl:px-[5rem] px-0">
+         <h1 class="home__title ">Hi,<br>I'am <span class="home__title-color">Mohit</span><br> Web Designer</h1>
+         <a href="img/mohit.pdf" download="mohit.pdf" class=" btn bg-green-700 w-[45%]  rounded-xl text-[#eee] xl:py-[2rem] py-3 xl:text-[3rem] text-xl xl:mt-10 mt-5">Resume</a>
       </div>
       
-      <div class="item-3 home-img ">
-        <img src="img/3.jpg" alt="">
+      <div class="item-3 flex justify-between items-center home-img  h-full w-full">
+        <img src="img/3.jpg"  class="h-[90%] w-[90%] object-cover" alt="">
         
       </div>
     </div>
   </section>
   
- <section class="about cantainer-fluid mx-auto mt-5" id="about">
-    <div class="row cantainer mx-auto grid sm:grid-cols-2 grid-cols-1 gap-[2rem] mt-2">
-      <div class="img">
-        <img src="img/about.jpg" alt="">
+ <section class="about" id="about">
+    <div class="row xl:px-[12rem] px-[2rem] grid sm:grid-cols-2 grid-cols-1 gap-[2rem] xl:py-[4rem] py-[2rem]">
+      <div class="img xl:h-[30rem] h-[20rem] w-full">
+        <img src="img/about.jpg" class="object-cover  h-full w-full xl:w-[90%] mx-auto" alt="">
       </div>
       <div class="cap text-2xl gap-3 flex justify-center flex-col">
         <h1 class="sub-heading font-bold text-4xl">about</h1>
-        <p>hii every one my name mohit vijay form india this time bca fisrt yers complent with 69.0% til then created 2 e-commers wedside and 6 profile and 1 wedpage but aswini kumar my life best project proper nolagede html , css and js other then c/c++</p>
+        <p >hii every one my name mohit vijay form india this time bca fisrt yers complent with 69.0% til then created 2 e-commers wedside and 6 profile and 1 wedpage but aswini kumar my life best project proper nolagede html , css and js other then c/c++</p>
       </div>
     </div>
   </section>
@@ -79,107 +84,85 @@
 
 
   
-  <section class="mywork cantainer-fluid my-4 mx-auto" id="work">
-  <h1 class="heading text-center text-[2rem] font-bold my-2">My Services</h1>
+  <section class="mywork" id="work">
+    <h1 class="heading text-center text-4xl  font-bold xl:py-10 py-5">My Services</h1>
 
- <div class="cantainer mx-auto  grid xl:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-4 text-center">
-<div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300  p-2 rounded pt-3 shadow hover:shadow-green-300">
- <ion-icon name="logo-html5" class="text-4xl text-center animate-bounce"></ion-icon>
- <h2 class="text-2xl font-bold">html 5</h2>
- <p class="text-left text-[.8rem]">html sre use created app and webside layout and sturched tis more esay and iam profile for lanangue 2.5 years as projects</p>
+    <div class="xl:px-[12rem] px-[2rem] grid xl:grid-cols-5 sm:grid-cols-4 grid-cols-1 gap-4 text-center">
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-html5" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">HTML5</h2>
+            <p class="text-left text-sm">I have 2.5 years of experience in creating web applications and website layouts using HTML5, making it easier to structure content effectively.</p>
+        </div>
 
-</div>
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-css3" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">CSS3</h2>
+            <p class="text-left text-sm">I specialize in CSS3, including animations, grid layouts, and flexbox. I am proficient in both CSS and SCSS, which are essential for modern web design.</p>
+        </div>
 
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-javascript" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">JavaScript Developer</h2>
+            <p class="text-left text-sm">JavaScript is essential for web development, enabling dynamic content and interactive features. I have experience in using JavaScript for various web applications.</p>
+        </div>
 
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-google" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">Google SEO</h2>
+            <p class="text-left text-sm">I understand the principles of SEO and how to optimize web pages for better ranking on Google. My goal is to help websites achieve higher visibility in search results.</p>
+        </div>
 
-<div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300">
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-python" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">Python & C/C++</h2>
+            <p class="text-left text-sm">I have a solid understanding of programming fundamentals in Python and C/C++, including control structures, loops, and data structures.</p>
+        </div>
 
-<ion-icon name="logo-css3" class="text-4xl text-center animate-bounce"></ion-icon>
-   <h2 class="text-2xl font-bold">css 3  </h2>
-   <p class="text-left text-[.8rem]">css 3 all about fetcer to know as animaton creation and desing css grid layout and flexbox etc. my allowed fereated lanangue css & sccs the most use css side link is blow </p>
-   
-   </div>
-     
-     
-<div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300">
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-wordpress" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">WordPress</h2>
+            <p class="text-left text-sm">I can create and manage WordPress sites, making it accessible for users without a technical background. I have completed projects using WordPress.</p>
+        </div>
 
-<ion-icon name="logo-javascript" class="text-4xl text-center animate-bounce"></ion-icon>
-     <h2 class="text-2xl font-bold">javascript devloper</h2>
-    <p class="text-left text-[.8rem]">javascript are most use every weside and app its help logic and most caluation embed most easy use webside desing.  </p>
-     
-   </div>
-   
-<div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300">
-
-    <ion-icon name="logo-google" class="text-4xl text-center animate-bounce"></ion-icon>
-         <h2 class="text-2xl font-bold">google seo </h2>
-         <p class="text-left text-[.8rem]">the goole seo use are webpade &webside to ranking its are created all the wedside goole rank first position as aswini kumar named webside blow is link </p>
-
-       </div>
-
-   
-       
-<div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300">
-
-        <ion-icon name="logo-python" class="text-4xl text-center animate-bounce"></ion-icon>
-             <h2 class="text-2xl font-bold">python and c/c++</h2>
-             <p class="text-left text-[.8rem]">this langues basic langues its Proper Nolagede as if-else , loop, array and basic most c++ most fevereat lanuage </p>
-
-             
-           </div>
-
-
- <div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300">
-
-            <ion-icon name="logo-wordpress" class="text-4xl text-center animate-bounce"></ion-icon>
-                 <h2 class="text-2xl font-bold">wordpress </h2>
-                 <p class="text-left text-[.8rem]">the wordpress are use no tech background proson its wordpress cread onliny one project but know all about the wordpress.</p>
-                 
-   </div>
-
-
- <div class="service-list p-2 rounded pt-3 shadow hover:shadow-green-300">
-
-  <ion-icon name="logo-github" class="text-4xl text-center animate-bounce"></ion-icon>
-       <h2 class="text-2xl font-bold">github projects</h2>
-       <p class="text-left text-[.8rem]">github are use to deployare project is free hoster till then github everday active and 25+ project to hosest link is a bio</p>
-     </div>
-  
- </div>
-  
+        <div class="service-list p-4 rounded-lg shadow hover:shadow-gray-800 transition-shadow duration-300">
+            <ion-icon name="logo-github" class="text-5xl animate-bounce"></ion-icon>
+            <h2 class="text-2xl font-bold mt-2">GitHub Projects</h2>
+            <p class="text-left text-sm">I actively use GitHub for version control and project deployment. I have hosted over 25 projects, showcasing my work and skills.</p>
+        </div>
+    </div>
 </section>
-
 
   <section  class="projects cantainer-fluid my-5 mx-auto" id="project">
       <h1 class="heading text-center text-[2rem] font-bold my-2">best projects</h1>
 
   
-  <div class="project-main cantainer max-w-[500px] grid grid-cols-2  mx-auto gap-4 ">
-    <div class="project-box shadow p-3 w-[100%] hover:shadow-green-300 gap-1 ">
-      <div class="img w-[100%] h-[7.5rem]">
-        <img src="img/logo/2.png" class="img-fluid w-[100%]" alt="">
+  <div class=" flex flex-wrap gap-[1rem] xl:px-[12rem] px-[2rem] w-full h-full xl:justify-start
+ justify-center">
+    <div class="project flex shadow rounded-lg p-3 w-[20rem] hover:shadow-gray-800 gap-1 flex-col">
+      <div class="img h-[15rem] rounded-lg bg-red-500">
+        <img src="img/work/1.jpg" class="rounded-lg w-full h-full object-cover" alt="">
       </div>
       
       <div class="text-box">
-        <h1 class="sub-heading text-[1.2rem] font-[600]">kiyakya</h1>
-        <p class="text-left text-[1rem]">kiykya is e-commerce webside its create simple YouTube tutorials use its full working </p>
-        <a href="https://kiyakya.netlify.app/" class="button text-[#666]">click here</a>
+        <h1 class="sub-heading text-[1.7rem] font-[600] py-1">kiyakya</h1>
+        <p class="text-left text-[1.3rem] leading-[2.2rem]">kiykya is e-commerce webside its create simple YouTube tutorials use its full working </p>
+        <a href="https://kiyakya.netlify.app/" class="button text-[#666] py-1 text-[1.3rem]">click here</a>
       </div>
       
     </div>
-    <div class="project-box  shadow p-3 hover:shadow-green-300 gap-1">
-      <div class="img w-[100%] h-[7.5rem]">
-        <img src="img/logo/1.jpg" class="img-fluid w-[100%] h-[100%] " alt="">
+    <div class="project flex shadow p-3 w-[20rem] hover:shadow-gray-800 gap-1 flex-col rounded-lg">
+      <div class="img h-[15rem] bg-red-500 rounded-lg">
+        <img src="img/logo/1.jpg" class="rounded-lg w-full h-full object-cover" alt="">
       </div>
       
       <div class="text-box">
-        <h1 class="sub-heading text-[1.2rem] font-[600]">aswini kumar  </h1>
-        <p class="text-left text-[1rem]">e-commerce webside sale cloths, yoga products</p>
-        <a href="https://aswinikumar.netlify.app" class="button">click here</a>
+        <h1 class="sub-heading text-[1.7rem] font-[600] py-1">aswini kumar </h1>
+        <p class="text-left text-[1.3rem] leading-[2.2rem]">e-commerce webside sale cloths, yoga products</p>
+        <a href="https://aswinikumar.netlify.app" class="button text-[#666] py-1 text-[1.3rem]">click here</a>
       </div>
       
-     
     </div>
+
 
    </div>
   </div>
@@ -187,10 +170,10 @@
 </section>
 
   
-  <section class="contact mx-auto cantainer-fluid" id="contact">
+  <section class="contact" id="contact">
     <h1 class="heading text-center text-[2rem] font-bold my-2">Contact</h1>
 
-    <div class="c-text flex flex-col gap-4 ">
+    <div class="xl:px-[12rem] px-[2rem] c-text flex flex-col gap-4 ">
       <div class="c-row  flex  gap-3 flex-row">
         <ion-icon name="mail-outline" class="text-[1.4rem]"></ion-icon>
         <h3 class="font-semibold">vijaymohit265@gmail.com</h3>
@@ -212,7 +195,8 @@
 <footer class="text-center p-5 bg-[#fff] shadow mt-5">
   <h4>@copyright by <span>mr mohit vijay</span> web developer</h4>
 </footer>
- 
-  <script src="main.js"></script>
+
+
+<script src="main.js"></script>
 </body>
 </html>
