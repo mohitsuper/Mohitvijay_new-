@@ -6,7 +6,6 @@ navLinks.forEach((v,i)=>{
     duration: 1,
     opacity:0,
     y:50,
-    scrub:true,
     ease: 'power2.out',
   });
 })
@@ -17,7 +16,6 @@ gsap.from('#about', {
       trigger: '#about', 
       start: 'top 80%', 
       end: 'bottom 80%', 
-      scrub: true 
   }
 });
 
@@ -29,11 +27,10 @@ ServerList.forEach((v,i)=>{
         trigger: v, 
         start: 'top 80%',
         end: 'bottom 90%', 
-         
-         scrub: true ,
-    }
+      }
   });
 })
+
 
 let Project  = document.querySelectorAll('.project');
 Project.forEach((v,i)=>{
@@ -43,11 +40,25 @@ Project.forEach((v,i)=>{
         trigger: v, 
         start: 'top 90%', 
         end: 'bottom 100%', 
-        scrub: true 
     }
   });
 })
 
+
+let heading = document.querySelectorAll('.heading')
+heading.forEach((v,i)=>{
+  gsap.from(v,{
+    x:-500,
+    duration:0.5,
+    ease: 'power2.out',
+    scrollTrigger:{
+      trigger: v, 
+      start: 'top 50%', 
+      end: 'bottom 100%', 
+    }
+
+  })
+})
 
 var Menu = document.querySelector(".menu");
 var Nav = document.querySelector("#sidemenu");
